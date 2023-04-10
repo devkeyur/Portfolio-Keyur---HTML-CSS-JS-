@@ -1,0 +1,85 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap");
+
+/* general */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* transition */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* navbar */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: blueviolet;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hamburger menu */
+
+.hamburger-nav {
+  display: none;
+}
+
+.ham-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.ham-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
